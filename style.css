@@ -236,8 +236,9 @@
     background-color:#6b6967;
   }
 
-  .container-5{
+  .container-5 {
     background-color: rgb(204, 243, 243);
+    padding: 40px 20px;
 }
 
 .star::before {
@@ -246,32 +247,38 @@
     color: rgb(209, 181, 22);
 }
 
-.card-1 {
-  background-color: white;
-    display: flex; 
-    flex-direction: column; 
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin-left: 110px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
-.card-2{
-  background-color: white;
-  display: flex; 
-  flex-direction: column; 
-  height: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-left: 45px;
+
+.card:hover {
+    transform: scale(1.05);
 }
-.card-3 {
-  background-color: white;
-  display: flex; 
-  flex-direction: column; 
-  height: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin-left: -20px;
+
+.img-card {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.row {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 
